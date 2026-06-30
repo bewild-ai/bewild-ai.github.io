@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WildAI
+title: 4433 AI 工具指南
 ---
 
 <style>
@@ -270,22 +270,23 @@ title: WildAI
   <section class="wildai-hero">
     <nav class="wildai-shell wildai-nav" aria-label="站点导航">
       <a class="wildai-brand" href="{{ '/' | relative_url }}">
-        <span class="wildai-mark">W</span>
-        <span>WildAI</span>
+        <span class="wildai-mark">4433</span>
+        <span>4433 AI</span>
       </a>
       <div class="wildai-nav-links">
         <a href="{{ '/' | relative_url }}">首页</a>
-        <a href="#latest">标签</a>
+        <a href="{{ '/about/' | relative_url }}">关于</a>
+        <a href="{{ '/faq/' | relative_url }}">FAQ</a>
       </div>
     </nav>
 
     <div class="wildai-shell wildai-hero-center">
       <div>
-        <h1 class="wildai-title"><span>W</span> WildAI</h1>
-        <p class="wildai-subtitle">一分钟轻松订阅 ChatGPT、Claude、Gemini、X 等海外线上服务</p>
+        <h1 class="wildai-title"><span>4433</span> AI 工具指南</h1>
+        <p class="wildai-subtitle">整理国内用户订阅和使用 ChatGPT、Claude、Gemini、Midjourney 等海外 AI 工具的教程、方案对比和常见问题。</p>
         <div class="wildai-actions">
-          <a class="wildai-button primary" href="https://bewild.ai?code=AIG">前往官网</a>
-          <a class="wildai-button secondary" href="#latest">常见问题</a>
+          <a class="wildai-button primary" href="#latest">查看教程</a>
+          <a class="wildai-button secondary" href="{{ '/faq/' | relative_url }}">常见问题</a>
         </div>
       </div>
     </div>
@@ -309,6 +310,6 @@ title: WildAI
   </section>
 
   <footer class="wildai-footer">
-    WildAI。轻松订阅海外线上服务。
+    4433 AI 工具指南。持续整理海外 AI 工具订阅、使用和方案对比教程。
   </footer>
 </main>
