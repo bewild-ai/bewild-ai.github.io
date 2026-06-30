@@ -325,6 +325,16 @@ title: 4433 AI 工具指南
     text-decoration: none;
   }
 
+  .wildai-card-cover {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
+    border: 1px solid rgba(217, 228, 238, 0.9);
+    border-radius: 8px;
+    object-fit: cover;
+    background: #eef5ff;
+  }
+
   .wildai-card-top {
     display: flex;
     align-items: center;
@@ -539,6 +549,9 @@ title: 4433 AI 工具指南
       <div class="wildai-posts">
         {% for post in site.posts %}
         <a class="wildai-card" href="{{ post.url | relative_url }}">
+          {% if post.image %}
+          <img class="wildai-card-cover" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
           <div class="wildai-card-top">
             <span class="wildai-card-type">教程</span>
             <span class="wildai-card-arrow" aria-hidden="true">&gt;</span>
@@ -548,7 +561,7 @@ title: 4433 AI 工具指南
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
             <span class="wildai-tags">#AI #教程 #订阅</span>
           </div>
-          <p class="wildai-excerpt">{{ post.excerpt | strip_html | truncate: 132 }}</p>
+          <p class="wildai-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 132 }}</p>
         </a>
         {% else %}
         <div class="wildai-empty">教程正在整理中。</div>
