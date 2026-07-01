@@ -2,6 +2,7 @@ title: 4433 AI 工具指南
 description: 国内用户订阅和使用 ChatGPT、Claude、Gemini、Midjourney 等海外 AI 工具的教程、方案对比和常见问题
 theme: minima
 url: "https://4433.ai"
+lang: zh-CN
 permalink: /:title/
 
 plugins:
