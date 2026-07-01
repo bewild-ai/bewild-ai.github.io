@@ -5,6 +5,75 @@ description: "Claude 注册、订阅 Claude Pro/Max 的完整教程，包括 Wil
 image: /assets/images/claude-subscribe-cover.png
 ---
 
+<style>
+  .claude-guide {
+    --guide-ink: #172033;
+    --guide-muted: #4f5d70;
+    --guide-line: #dbe4ef;
+    --guide-blue: #2563eb;
+    --guide-bg: #f6f9fc;
+    color: var(--guide-ink);
+    font-size: 16.5px;
+    line-height: 1.85;
+  }
+
+  .claude-guide p {
+    margin: 0 0 1.08em;
+  }
+
+  .claude-guide h2 {
+    margin: 2.2em 0 0.9em;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--guide-line);
+    color: var(--guide-ink);
+    font-size: clamp(24px, 4vw, 32px);
+    line-height: 1.28;
+    letter-spacing: 0;
+  }
+
+  .claude-guide a {
+    color: var(--guide-blue);
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .claude-guide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 24px auto 30px;
+    border: 1px solid var(--guide-line);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 14px 32px rgba(23, 32, 51, 0.08);
+  }
+
+  .claude-guide > p:first-of-type img {
+    margin-top: 0;
+    border-color: transparent;
+    box-shadow: 0 18px 42px rgba(23, 32, 51, 0.12);
+  }
+
+  .claude-guide strong {
+    color: var(--guide-ink);
+  }
+
+  @media (max-width: 640px) {
+    .claude-guide {
+      font-size: 16px;
+      line-height: 1.78;
+    }
+
+    .claude-guide img {
+      margin: 20px auto 24px;
+      border-radius: 7px;
+    }
+  }
+</style>
+
+<div class="claude-guide" markdown="1">
+
 ![Claude 注册订阅攻略封面]({{ '/assets/images/claude-subscribe-cover.png' | relative_url }})
 
 随着国内中转站越来越多的爆雷事件，很多人开始不喜欢用 CC 中转或者 Codex 中转了。
@@ -132,3 +201,5 @@ image: /assets/images/claude-subscribe-cover.png
 以上就是Claude的所有的注册教程。
 
 两个点需要注意，Claude的封号确实很厉害，建议是使用老的Gmail邮箱进行订阅，其次就是不要一上来就订阅Max套餐，先订阅Pro套餐进行养号。
+
+</div>
